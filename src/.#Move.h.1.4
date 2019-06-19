@@ -1,0 +1,21 @@
+#include "Board.h"
+#include "Piece.h"
+#include "Move.h"
+#include "Play.h"
+#include "Positon.h"
+
+#ifndef MOVE_H
+#define MOVE_H
+
+int Castling(PIECE board[][0], PIECE Piece, MOVE move);
+int EnPassant(PIECE board[][0], PIECE Piece, MOVE move);
+int Promotion(PIECE board[][0], PIECE Piece, MOVE move);
+int KingMove(PIECE board[][0], PIECE Piece, MOVE move);
+int PawnMove(PIECE board[][0], PIECE Piece, MOVE move);
+int RookMove(PIECE board[][0], PIECE Piece, MOVE move);
+int KnightMove(PIECE board[][0], PIECE Piece, MOVE move);
+int BishopMove(PIECE board[][0], PIECE Piece, MOVE move);
+int QueenMove(PIECE board[][0], PIECE Piece, MOVE move);
+
+#endif
+

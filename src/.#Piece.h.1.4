@@ -1,0 +1,14 @@
+#ifndef PIECE_H
+#define PIECE_H
+
+typedef struct {
+	char* Type;
+	int Value;
+	int PosX;
+	int PosY;
+	int Alive;
+	int PotentialMoves[30];
+	//this 2 variable is for the AI, ignore
+	int bestmove;
+	int bestmoveValue;
+} PIECE;
